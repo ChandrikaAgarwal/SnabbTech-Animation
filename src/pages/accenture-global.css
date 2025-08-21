@@ -1,0 +1,102 @@
+
+.page-container {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.global-recognition-text {
+    color: white;
+    font-size: 90px;
+    text-align: center;
+}
+
+
+.cards-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: flex-start;
+    padding-left: 10vh;
+    padding-bottom: 100px;
+}
+
+
+.card {
+    color: white;
+    padding: 40px;
+    width: 65vh;
+    height: 40vh;
+    font-size: 24px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.card-text{
+    position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.5s ease-in-out;
+}
+.card:hover .card-text{
+    transform: translateY(-500px);
+    
+}
+.card-description{
+    transform: translateY(400%);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    margin-top: 15px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size:15px;
+}
+
+.card-para-2{
+    transform: translateY(400%);
+    font-size: 10px;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    margin-top: 15px;
+    color: aliceblue;
+    font-size: 15px;
+}
+.card:hover .card-description{
+    transform: translateY(0);
+    opacity: 1;
+}
+.card:hover .card-para-2 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.leader-in-reinvention {
+    background-color: blue;
+}
+
+.great-place-to-work {
+    background-color: red;
+    margin-left: 60vh;
+}
+
+.top-consulting-firm {
+    background-color: purple;
+    margin-left: 30vh;
+}
