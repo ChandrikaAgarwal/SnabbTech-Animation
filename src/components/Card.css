@@ -1,0 +1,21 @@
+.card{
+    height: 16rem;
+    width: 27rem;
+    padding: 2rem;
+    border: none;
+    
+}
+
+.card-animate-0 .card-animate-2{
+    background-color: transparent;
+}
+
+.card-animate-1 {
+    background-color: rgba(128, 0, 0, 0.801);
+    margin: 10rem 1rem 0 1rem;   
+}
+
+.cards{
+    display: flex;
+    margin-top: 10rem;
+}
